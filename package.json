@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-singapore-procurement",
+  "version": "0.1.0",
+  "description": "Singapore Government Procurement MCP — GeBIZ tender awards (keyless).",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "singapore-procurement"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-singapore-procurement"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
