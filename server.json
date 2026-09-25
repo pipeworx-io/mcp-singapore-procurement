@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/singapore-procurement",
   "title": "Singapore Procurement",
   "description": "Singapore Government Procurement MCP — GeBIZ tender awards (keyless).",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/singapore-procurement",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-singapore-procurement",
