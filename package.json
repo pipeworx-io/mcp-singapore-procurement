@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-singapore-procurement",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Singapore Government Procurement MCP — GeBIZ tender awards (keyless).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-singapore-procurement": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "singapore-procurement"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-singapore-procurement.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/singapore-procurement",
   "pipeworx": {
-    "sourceHash": "v1-645fad4a8d025b77c1d06080808248a8bd4ab0fc81793961f453ae50bc61704f",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "singapore-procurement",
+    "gatewaySlug": "singapore-procurement",
+    "sourceHash": "v1-a3f13b0dd546e9edc4f667de100e7e03a9d409f410c6c95bbe4dc2fff525635d",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }

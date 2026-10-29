@@ -1,0 +1,29 @@
+[
+  {
+    "name": "singapore_search_awards",
+    "description": "Search Singapore government procurement tender awards from the official GeBIZ dataset on data.gov.sg (keyless). Full-text search over awarding agency, supplier name, and tender description. Returns each award with tender number, agency, supplier, description, awarded amount (SGD), award date, and status. Use for questions like \"which company won contract X\", \"how much did agency Y award for Z\", or listing recent government contract awards. Omit \"query\" to page through all awards. Amounts are in Singapore Dollars (SGD).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Optional full-text keyword — matched across agency, supplier name, and tender description (e.g. \"cloud\", \"Accenture\", \"Ministry of Health\"). Omit to list all awards."
+        },
+        "limit": {
+          "type": [
+            "number",
+            "string"
+          ],
+          "description": "Max awards to return (1–100). Default 20."
+        },
+        "offset": {
+          "type": [
+            "number",
+            "string"
+          ],
+          "description": "Number of matching awards to skip, for paging. Default 0."
+        }
+      }
+    }
+  }
+]
